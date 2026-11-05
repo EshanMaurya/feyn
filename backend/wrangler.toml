@@ -1,0 +1,12 @@
+name = "feyn-backend"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Cheap, fast default for the tutor. Override per environment if needed.
+TUTOR_MODEL = "claude-haiku-5-5"
+
+# Secrets (not in this file):
+#   wrangler secret put ANTHROPIC_API_KEY
+# Local dev reads them from backend/.dev.vars (git-ignored).
